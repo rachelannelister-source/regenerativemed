@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>Regenerative Medicine | Southwest Spine & Pain</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -18,8 +20,8 @@
       <div>
         <div class="logo-top">Regenerative Medicine by</div>
         <div class="logo-sub">
-  <a href="https://www.southwestspineandpain.com/">Southwest Spine and Pain</a>
-</div>
+          <a href="https://www.southwestspineandpain.com/">Southwest Spine and Pain</a>
+        </div>
       </div>
     </div>
 
@@ -33,9 +35,11 @@
     <h1>Regenerative Medicine, Focused on Real Results</h1>
 
     <p>
-      Regenerative medicine treatments in Southern Utah designed to support your body’s natural healing process and help you get back to living life again.<p>
+      Regenerative medicine treatments in Southern Utah designed to support your body’s natural healing process and help you get back to living life again.
+    </p>
 
-For years, patients across Southern Utah have trusted Southwest Spine and Pain for expert care. Now, advanced regenerative treatment options are available locally, so you can access the care you need without traveling out of the area.
+    <p>
+      For years, patients across Southern Utah have trusted Southwest Spine and Pain for expert care. Now, advanced regenerative treatment options are available locally, so you can access the care you need without traveling out of the area.
     </p>
 
     <div class="hero-buttons">
@@ -44,10 +48,10 @@ For years, patients across Southern Utah have trusted Southwest Spine and Pain f
     </div>
   </div>
 
+  <!-- FLIP CARD -->
   <div class="hero-card flip-card" id="heroFlipCard">
     <div class="flip-card-inner">
 
-      <!-- FRONT OF CARD -->
       <div class="flip-card-front">
         <h3>Why Patients Choose Regenerative Medicine</h3>
 
@@ -72,22 +76,17 @@ For years, patients across Southern Utah have trusted Southwest Spine and Pain f
           All procedures are performed by double board-certified physicians, using advanced diagnostics and minimally invasive techniques.
         </p>
 
-        <button class="flip-button" type="button" onclick="document.getElementById('heroFlipCard').classList.add('flipped')">
+        <button class="flip-button" onclick="document.getElementById('heroFlipCard').classList.add('flipped')">
           Watch Video
         </button>
       </div>
 
-      <!-- BACK OF CARD -->
       <div class="flip-card-back">
         <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/yUpzF3rTA_g"
-            title="Regenerative Medicine Video"
-            allowfullscreen>
-          </iframe>
+          <iframe src="https://www.youtube.com/embed/yUpzF3rTA_g?rel=0" allowfullscreen></iframe>
         </div>
 
-        <button class="flip-button" type="button" onclick="document.getElementById('heroFlipCard').classList.remove('flipped')">
+        <button class="flip-button" onclick="document.getElementById('heroFlipCard').classList.remove('flipped')">
           Back to Info
         </button>
       </div>
@@ -97,7 +96,7 @@ For years, patients across Southern Utah have trusted Southwest Spine and Pain f
 </section>
 
 <!-- VIDEOS -->
-<section id="videos" class="section alt">
+<section id="videos" class="section alt fade-in">
   <div class="container">
     <h2>See How Regenerative Medicine Works</h2>
 
@@ -107,34 +106,22 @@ For years, patients across Southern Utah have trusted Southwest Spine and Pain f
 
     <div class="grid-3 video-grid">
       <div class="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/yUpzF3rTA_g?rel=0"
-          title="Regenerative Medicine Video"
-          allowfullscreen>
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/yUpzF3rTA_g?rel=0" allowfullscreen></iframe>
       </div>
 
       <div class="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/fSYT93tQ944?rel=0"
-          title="Rick's Stem Cell Treatment Story"
-          allowfullscreen>
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/fSYT93tQ944?rel=0" allowfullscreen></iframe>
       </div>
 
       <div class="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/iGahM11VHoU?si=CO1ntvpl_dEI_CXV?rel=0"
-          title="Tony's Stem Cell Story"
-          allowfullscreen>
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/iGahM11VHoU?rel=0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TREATMENTS -->
-<section id="treatments" class="section container">
+<section id="treatments" class="section container fade-in">
   <h2>Treatment Options</h2>
 
   <div class="grid-3">
@@ -156,7 +143,7 @@ For years, patients across Southern Utah have trusted Southwest Spine and Pain f
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="section container">
+<section class="section container fade-in">
   <h2>Patient Testimonials</h2>
 
   <div class="grid-3">
@@ -167,7 +154,7 @@ For years, patients across Southern Utah have trusted Southwest Spine and Pain f
 </section>
 
 <!-- FAQ -->
-<section class="section alt">
+<section class="section alt fade-in">
   <div class="container narrow">
     <h2>Questions & Answers</h2>
 
@@ -189,7 +176,7 @@ For years, patients across Southern Utah have trusted Southwest Spine and Pain f
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section container">
+<section id="contact" class="section container fade-in">
   <div class="contact-box">
     <div>
       <h2>Request an Evaluation</h2>
@@ -206,27 +193,21 @@ For years, patients across Southern Utah have trusted Southwest Spine and Pain f
   </div>
 </section>
 
-<!-- FLOATING CONTACT BUTTONS -->
-
-<!-- MOBILE: CALL -->
-<a href="tel:4356562424" class="floating-btn call-btn" aria-label="Call now">
+<!-- FLOATING BUTTONS -->
+<a href="tel:4356562424" class="floating-btn call-btn">
   <i class="fa-solid fa-phone"></i>
 </a>
 
-<!-- DESKTOP: EMAIL -->
-<a href="#contact" class="floating-btn email-btn" aria-label="Request an evaluation">
+<a href="#contact" class="floating-btn email-btn">
   <i class="fa-solid fa-envelope"></i>
 </a>
 
-
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-inner">
-
-    <div class="footer-left">
+    <div>
       <p class="footer-brand">Southwest Spine and Pain</p>
-      <p class="footer-tag">
-        Trusted pain management care across Southern Utah.
-      </p>
+      <p class="footer-tag">Trusted pain management care across Southern Utah.</p>
     </div>
 
     <div class="footer-links">
@@ -234,17 +215,15 @@ For years, patients across Southern Utah have trusted Southwest Spine and Pain f
       <a href="#contact">Request an Evaluation</a>
       <a href="tel:4356562424">Call 435-656-2424</a>
     </div>
-
   </div>
 
   <div class="footer-bottom">
-    <p>
-      © 2026 Southwest Spine and Pain. All rights reserved.
-    </p>
+    <p>© 2026 Southwest Spine and Pain. All rights reserved.</p>
     <p class="footer-disclaimer">
       Treatment results vary. A physician evaluation is required to determine whether regenerative medicine is appropriate for your condition.
     </p>
   </div>
 </footer>
+
 </body>
 </html>
