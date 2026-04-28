@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Regenerative Medicine | Southwest Spine & Pain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">
+      <img src="Images/SWSP logo blue bg@2x.png" class="logo-img" alt="Southwest Spine and Pain logo">
+      <div>
+        <div class="logo-top">Regenerative Medicine by</div>
+        <div class="logo-sub">Southwest Spine and Pain</div>
+      </div>
+    </div>
+
+    <a href="#contact" class="btn-primary">Request an Evaluation</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero container">
+  <div class="hero-text">
+    <h1>Regenerative Medicine, Focused on Real Results</h1>
+
+    <p>
+      Regenerative medicine treatments in Southern Utah designed to support your body’s natural healing process and help you get back to living life again.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#treatments" class="btn-primary">Explore Treatment Options</a>
+      <a href="#videos" class="btn-secondary">Watch Videos</a>
+    </div>
+  </div>
+
+  <div class="hero-card flip-card" id="heroFlipCard">
+    <div class="flip-card-inner">
+
+      <!-- FRONT OF CARD -->
+      <div class="flip-card-front">
+        <h3>Why Patients Choose Regenerative Medicine</h3>
+
+        <div class="benefit-list">
+          <div class="benefit-item">
+            <span class="benefit-icon">✓</span>
+            <p>Looking for non-surgical options, including PRP and stem cell treatments, to help avoid or delay surgery</p>
+          </div>
+
+          <div class="benefit-item">
+            <span class="benefit-icon">✓</span>
+            <p>Treatment plans tailored to your condition and pain source</p>
+          </div>
+
+          <div class="benefit-item">
+            <span class="benefit-icon">✓</span>
+            <p>Conservative, minimally invasive care before considering more advanced procedures</p>
+          </div>
+        </div>
+
+        <p class="hero-card-note">
+          All procedures are performed by double board-certified physicians, using advanced diagnostics and minimally invasive techniques.
+        </p>
+
+        <button class="flip-button" type="button" onclick="document.getElementById('heroFlipCard').classList.add('flipped')">
+          Watch Video
+        </button>
+      </div>
+
+      <!-- BACK OF CARD -->
+      <div class="flip-card-back">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/yUpzF3rTA_g"
+            title="Regenerative Medicine Video"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <button class="flip-button" type="button" onclick="document.getElementById('heroFlipCard').classList.remove('flipped')">
+          Back to Info
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos" class="section alt">
+  <div class="container">
+    <h2>See How Regenerative Medicine Works</h2>
+
+    <p class="section-intro">
+      Learn more about regenerative medicine treatment options and how they may support healing and improved function.
+    </p>
+
+    <div class="grid-3 video-grid">
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/yUpzF3rTA_g?rel=0"
+          title="Regenerative Medicine Video"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/fSYT93tQ944?rel=0"
+          title="Rick's Stem Cell Treatment Story"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/iGahM11VHoU?si=CO1ntvpl_dEI_CXV?rel=0"
+          title="Tony's Stem Cell Story"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS -->
+<section id="treatments" class="section container">
+  <h2>Treatment Options</h2>
+
+  <div class="grid-3">
+    <div class="card">
+      <h3>PRP Therapy</h3>
+      <p>Uses your body’s own platelets to support healing, reduce inflammation, and promote recovery in injured or damaged tissue. This treatment is commonly used for joint pain, tendon injuries, and other musculoskeletal conditions as part of a personalized care plan.</p>
+    </div>
+
+    <div class="card">
+      <h3>Stem Cell Treatments</h3>
+      <p>Stem cell-based treatments are designed to support your body’s ability to heal and recover. They are often considered for joint pain and certain injuries as a minimally invasive option before more advanced procedures.</p>
+    </div>
+
+    <div class="card">
+      <h3>Joint Injections</h3>
+      <p>Image-guided injections used to deliver medication directly to the affected joint. These treatments are designed to reduce inflammation and improve function based on your diagnosis and evaluation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section container">
+  <h2>Patient Testimonials</h2>
+
+  <div class="grid-3">
+    <div class="card">“This gave me options I didn’t know existed.”</div>
+    <div class="card">“They actually explained everything clearly.”</div>
+    <div class="card">“I finally felt like I had a real plan.”</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section alt">
+  <div class="container narrow">
+    <h2>Questions & Answers</h2>
+
+    <details>
+      <summary>What is regenerative medicine?</summary>
+      <p>Regenerative medicine uses biologic treatments, such as platelet-rich plasma (PRP) and other cell-based therapies, to support the body’s natural healing response and improve function in damaged or injured tissues.</p>
+    </details>
+
+    <details>
+      <summary>Who is a candidate?</summary>
+      <p>Candidates are typically those dealing with joint pain, injuries, or chronic conditions who are looking for non-surgical treatment options. The best way to determine if regenerative medicine is right for you is through a thorough evaluation, including your medical history, imaging, and diagnosis.</p>
+    </details>
+
+    <details>
+      <summary>Are regenerative medicine treatments surgical?</summary>
+      <p>Most regenerative medicine treatments are minimally invasive and are not considered traditional surgery. They are typically performed using image-guided injections designed to precisely target the affected area. Because they do not involve large incisions or extended recovery times, these treatments are often explored before more invasive surgical options, depending on your condition and overall treatment plan.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section container">
+  <div class="contact-box">
+    <div>
+      <h2>Request an Evaluation</h2>
+      <p>Find out if regenerative medicine could help you get back to doing what you love.</p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <input type="tel" placeholder="Phone">
+      <textarea placeholder="Message"></textarea>
+      <button class="btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- FLOATING CONTACT BUTTONS -->
+
+<!-- MOBILE: CALL -->
+<a href="tel:4356562424" class="floating-btn call-btn" aria-label="Call now">
+  <i class="fa-solid fa-phone"></i>
+</a>
+
+<!-- DESKTOP: EMAIL -->
+<a href="#contact" class="floating-btn email-btn" aria-label="Request an evaluation">
+  <i class="fa-solid fa-envelope"></i>
+</a>
+</body>
+</html>
