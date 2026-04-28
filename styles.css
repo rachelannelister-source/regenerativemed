@@ -53,6 +53,10 @@ body {
   align-items: center;
   width: 100%;
   padding: 0 32px;
+
+    max-width: 1300px;   /* match container */
+  margin: 0 auto;      /* center it */
+  padding: 0 20px;     /* match container padding */
 }
 
 .logo {
